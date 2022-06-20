@@ -105,26 +105,23 @@ nav li {
 
 #edu-showcase h1 {
     color: #e8e9ea;
+    /* color: #fff; */
     /* TODO: Mess with opacity */
-    background-color: rgb(232, 74, 38, 0.5);
+    background-color: rgba(232, 74, 38, 0.4);
 }
 
-/* FIXME: Image and schooling don't line up for different screen sizers */
 .logo img{
-    /* max-width: 150px; */
     float: left;
-    max-width: 150px;
+    max-width: 12.5%;
     height: auto;
-    box-sizing: border-box;
+    box-sizing:border-box;
     margin-top: 60px;
-    /* padding-left: 100px; */
 }
 
 .schooling {
     width: 25%;
     float:left;
     box-sizing: border-box;
-    padding-left: 3.65%;
 }
 
 .schooling h4, .coursework h4, .skills h4{
@@ -161,20 +158,50 @@ nav li {
     padding-left: 12.5%;
     position: absolute;
     top: 50px;
+    /* The footer has a height of ~50px, thats why bottom is 50+50=100 */
     bottom: 100px;
     left: -1px;
 }
 /* end education.html */
 
+/* experience.html */
+#exp-showcase {
+    background-image: url(images/orbit.jpg);
+    background-position:45%;
+    background-size: cover;
+    text-align: center;
+    vertical-align:middle;
+    padding: 40px;
+}
+
+#exp-showcase {
+    color: #13294b;
+}
+/* end experience.html */
+
+/* projects.html */
+#proj-showcase {
+    background-image: url(images/code.webp);
+    background-position: 50% 25%;
+    background-size: cover;
+    text-align: center;
+    vertical-align:middle;
+    padding: 40px;
+}
+
+#proj-showcase {
+    color: #e8e9ea;
+}
+/* end projects.html */
+
 /* HOW TO PREVENT HIDING OF TEXT FROM FOOTER */
 .coursework, .skills {
-    /* FIXME: Fix the padding at the bottom here, idk 
-    Julie said put it at 135px, I like it at 30/35px in general*/
-    padding-bottom: 135px;
+    /* When adding more classes, look to implement a 35px padding to 
+    remove the whitespace at the bottom */
+    padding-bottom: 100px;
 }
 
 /* footer */
-/* FIXME: Try to center the footer */
 footer{
     background-color: #13294b;
     position:fixed;
@@ -184,17 +211,14 @@ footer{
 }
 
 footer a {
-    margin: 10px;
+    margin: 5px;
 }
 
-
-footer li {
-    display: inline;
-    padding: 5px;
+footer ul{
+    padding-right: 40px;
 }
 
 footer ul {
     text-align: center;
-    list-style: inside;
 }
 /* end footer */
