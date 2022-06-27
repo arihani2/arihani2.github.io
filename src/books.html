@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Me | Anthony Rihani</title>
+        <title>Self Studying | Anthony Rihani</title>
         <link rel = "stylesheet" type = "text/css" href = "../style.css">
         <script src="https://kit.fontawesome.com/d5d49ec355.js" crossorigin="anonymous"></script>
     </head>
@@ -24,27 +24,38 @@
                 </ul>
             </div>
         </nav>
-        <div id="contact-showcase">
+        <div id="books-showcase">
             <div class = 'container'>
                 <h1>
-                    Contact
+                    Self Studying
                 </h1>
             </div>
         </div>
         <div class = 'container'>
-            <form action= "mailto:anthonyrihani7@gmail.com" method= "POST" enctype= "multipart/form-data" name="EmailForm">
-                Name:
-                <br>
-                <input type="text" size="19" name="ContactName">
-                <br>
-                <br>
-                Message:
-                <br>
-                <textarea name="ContactComment" rows="6" cols="20"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+            <table class="textbooks"> 
+                <tr id = 'column-header'>
+                    <td id = 'textbook-header'>
+                        <h3>Textbook/Class</h3>
+                        <!-- Textbook -->
+                    </td>
+                    <td id = 'description-header'>
+                        <h3>Description</h3>
+                        <!-- Description -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <cite>A Mathematical Introduction to Logic</cite>
+                        <br>
+                        <cite>Herbert Enderton</cite>
+                        <br>
+                        Math 414 at UIUC
+                    </td>
+                    <td>
+                        The text begins by breaking down mathematics to its axiomatic expressions and begin foundational logical arguments. The text explains how to create logical expressions and how these logical expressions can follow from others. Without these rules for logical expressions, many proofs would have no foundation and could collapse due to a logical fallacy. The end goal of this text is to prove Godel's Completeness Theorem.
+                    </td>
+                </tr>
+            </table>
         </div>
         <footer>
             <ul>
