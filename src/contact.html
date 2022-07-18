@@ -3,6 +3,7 @@
     <head>
         <title>Contact Me | Anthony Rihani</title>
         <link rel = "stylesheet" type = "text/css" href = "../style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/d5d49ec355.js" crossorigin="anonymous"></script>
     </head>
 
@@ -18,7 +19,7 @@
                     <a href="index.html"><li>Home</li></a>
                     <a href="education.html"><li>Education</li></a>
                     <a href="experience.html"><li>Experience</li></a>
-                    <a href="projects.html"><li>Personal Projects</li></a>
+                    <!-- <a href="projects.html"><li>Personal Projects</li></a> -->
                     <a href="../files/Anthony Rihani Resume 052422.pdf" download="Anthony Rihani Resume" target="_blank"><li>Resume</li></a>
                     <a href="contact.html"><li>Contact</li></a>
                 </ul>
@@ -32,28 +33,30 @@
             </div>
         </div>
         <div class = 'container'>
-            <form action= "mailto:anthonyrihani7@gmail.com" method= "POST" enctype= "multipart/form-data" name="EmailForm">
-                Name:
+            <h2 id = 'email-header'>
+                I'm looking forward to your email!
+            </h2>
+            <form id="contact-form"> 
+                <input type="text" name="name" placeholder="Your Name">
                 <br>
-                <input type="text" size="19" name="ContactName">
+                <br>
+                <input type="text" name="email" placeholder="Your Email">
                 <br>
                 <br>
-                Message:
-                <br>
-                <textarea name="ContactComment" rows="6" cols="20"></textarea>
+                <textarea name="message" cols="22" rows="5" placeholder="Your Message"></textarea>
                 <br>
                 <br>
                 <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
             </form>
         </div>
         <footer>
             <ul>
-                <ul>
-                    <a href = "index.html" class="fa-solid fa-house-chimney fa-2xl"></a>
-                    <a href = 'http://www.linkedin.com/in/anthonyrihani' target="_blank" rel="noopener noreferrer" class="fa-brands fa-linkedin fa-2xl"></a>
-                    <a href = 'http://github.com/arihani2' target="_blank" rel="noopener noreferrer" class="fa-brands fa-github fa-2xl"></a>
-                </ul>
+                <a href = "index.html" class="fa-solid fa-house-chimney fa-2xl"></a>
+                <a href = 'http://www.linkedin.com/in/anthonyrihani' target="_blank" rel="noopener noreferrer" class="fa-brands fa-linkedin fa-2xl"></a>
+                <a href = 'http://github.com/arihani2' target="_blank" rel="noopener noreferrer" class="fa-brands fa-github fa-2xl"></a>
             </ul>
         </footer>
+        <script src="../js/contact.js"></script>
     </body>
 </html>

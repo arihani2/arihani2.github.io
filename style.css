@@ -96,7 +96,7 @@ nav li {
 
 .introduction img {
     float: left;
-    max-width: 20%;
+    width: 20%;
     height: auto;
     box-sizing: border-box;
 }
@@ -105,9 +105,24 @@ nav li {
     width: 33.3%;
     box-sizing: border-box;
     float: left;
+    position: relative;
     /* text-align: center; */
     padding: 35px;
-    /* border: 1px solid #5e6669; */
+    /* border-left: 1px solid #5e6669; */
+    /* box-shadow: -66px 0px 0px -65px #5e6669; */
+}
+
+#border-left {
+    border-left: 2px solid #5e6669;
+    border-right: 2px solid #5e6669;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    /* padding: 35px; */
+    left: 0px;
+    right: 125px;
+    top: 125px;
+    bottom: 50px;
 }
 
 .box h2 {
@@ -134,7 +149,7 @@ nav li {
 
 .logo img{
     float: left;
-    max-width: 5%;
+    width: 5%;
     max-height: auto;
     box-sizing:border-box;
     margin-top: 64px;
@@ -215,8 +230,38 @@ nav li {
 }
 
 .jobs {
-    padding-bottom: 35px;
+    padding-bottom: 50px;
 }
+
+/* .extracurricular, .extracurricular button {
+    background-color: #5e6669;
+} */
+
+/* TODO Look into background color */
+.collapsible {
+    background-color: #e8e9ea;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    padding: 0;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    margin: 5px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 /* end experience.html */
 
 /* projects.html */
@@ -284,14 +329,47 @@ nav li {
 }
 
 #contact-showcase {
-    background-image: url(images/contact.jpg);
-    background-position: 40%;
-    background-size: cover;
+    background-image: url(images/contact2.png);
+    background-position: 30%;
+    background-size:cover;
     text-align: center;
     vertical-align:middle;
     padding: 40px;
 }
+
+#contact-form, #email-header {
+    text-align: center;
+}
+
+input[type=text], textarea {
+    padding: 12px;
+    border: 3px solid #e8e9ea;
+    width: 20%;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 3px solid #5e6669;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #13294b;
+    color: #e8e9ea;
+    width: 10.5%;
+    height: 35px;
+    cursor: pointer;
+}
 /* end contact.html */
+
+/* form response */
+#good-form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* color: ; */
+}
+/* end form response */
 
 /* footer */
 footer{
@@ -314,3 +392,89 @@ footer ul {
     text-align: center;
 }
 /* end footer */
+
+/* SMALL WIDTH SETTINGS */
+@media(max-width:500px) {
+    /* Header */
+    header {
+        padding-left: 25%;
+    }
+
+    /* Nav Bar */
+    nav li {
+        display: block;
+        text-align: center;
+    }
+
+
+    /* Intro */
+    .introduction {
+        width: 100%;
+        margin: 0;
+    }
+
+    .introduction img {
+        float: none;
+        width: 50%;
+        height: auto;
+    }
+
+    #main-intro {
+        padding: 0;
+        float: none;
+        text-align: center;
+        max-width: 100%;
+        font-weight: 500;
+        padding: 0px 10px;
+    }
+
+    .box {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    #hobbies {
+        padding-bottom: 35px;
+    }
+
+    #border-left {
+        border: none;
+    }
+    /* End Intro */
+
+    /* Education */
+    .logo img {
+        width: 25%;
+        float: none;
+        display: none;
+    }
+    .schooling, .skills, .coursework {
+        width: 100%;
+        float: none;
+        padding-left: 12.5%;
+    }
+
+    .coursework {
+        padding-bottom: 0;
+    }
+
+    #box {
+        border: none;
+    }
+    /* End education */
+
+    /* contact */
+    input[type=text], textarea {
+        width: 100%;
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 25%;
+    }
+    
+    form {
+        padding-bottom: 60px;
+    }
+    /* end contact */
+}
