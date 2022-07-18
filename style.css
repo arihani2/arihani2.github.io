@@ -321,6 +321,10 @@ nav li {
 .textbooks {
     border-collapse: collapse;
 }
+
+#wrapper {
+    padding-bottom: 60px;
+}
 /* end books.html */
 
 /* contact.html */
@@ -441,6 +445,12 @@ footer ul {
     #border-left {
         border: none;
     }
+
+    td:not(#textbook-header, #description-header) {
+        width: 50%;
+        height: 300px;
+        overflow: scroll;
+    }
     /* End Intro */
 
     /* Education */
@@ -466,7 +476,7 @@ footer ul {
 
     /* contact */
     input[type=text], textarea {
-        width: 100%;
+        width: 80%;
     }
 
     input[type=submit], input[type=reset] {
@@ -477,4 +487,10 @@ footer ul {
         padding-bottom: 60px;
     }
     /* end contact */
+
+    #good-form {
+        width: 100%;
+        text-align: center;
+        padding-top: 50%;
+    }
 }

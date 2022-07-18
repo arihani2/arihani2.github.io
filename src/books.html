@@ -32,31 +32,19 @@
                 </h1>
             </div>
         </div>
-        <div class = 'container'>
-            <table class="textbooks"> 
-                <tr id = 'column-header'>
-                    <td id = 'textbook-header'>
-                        <h3>Textbook/Class</h3>
-                        <!-- Textbook -->
-                    </td>
-                    <td id = 'description-header'>
-                        <h3>Description</h3>
-                        <!-- Description -->
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <cite>A Mathematical Introduction to Logic</cite>
-                        <br>
-                        <cite>Herbert Enderton</cite>
-                        <br>
-                        Math 414 at UIUC
-                    </td>
-                    <td>
-                        The text begins by asking readers what logic is and how it applies to mathematics. Once establishing a need for a foundational language that logical statements can be derived from, the text then proceeds to establish this language. Throughout the text, the reader learns how to create logical expressions and the rules and consequences that follow. The end goal of the text is to prove Godel's Completeness Theorem.
-                    </td>
-                </tr>
-            </table>
+        <div class = 'container' id="wrapper">
+            <button type="button" class="collapsible">
+                <h3>
+                    <cite>A Mathematical Introduction to Logic</cite>
+                    <br>
+                    <cite>Herbert Enderton</cite>
+                    <br>
+                    Math 414 at UIUC
+                </h3>
+            </button>
+            <h4 class="content">
+                The text begins by asking readers what logic is and how it applies to mathematics. Once establishing a need for a foundational language that logical statements can be derived from, the text then proceeds to establish this language. Throughout the text, the reader learns how to create logical expressions and the rules and consequences that follow. The end goal of the text is to prove Godel's Completeness Theorem.
+            </h4>
         </div>
         <footer>
             <ul>
@@ -65,5 +53,6 @@
                 <a href = 'http://github.com/arihani2' target="_blank" rel="noopener noreferrer" class="fa-brands fa-github fa-2xl"></a>
             </ul>
         </footer>
+        <script src="../js/experience.js"></script>
     </body>
 </html>

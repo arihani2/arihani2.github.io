@@ -39,7 +39,7 @@ function formSubmit(e) {
         document.querySelector('textarea[name="message"]').value
     )
 
-    const promise = fetch("https://getform.io/f/737c652a-d561-43fb-ae98-646e803d670e", {
+    const promise = fetch("https://getform.io/f/3045e508-4b71-4830-b348-9b20e1c9c8b8", {
             method: "POST",
             body: formData,
     })
