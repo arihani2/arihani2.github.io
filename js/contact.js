@@ -11,9 +11,9 @@ function backupFormSubmit(status) {
 //Possbily put the twilio stuff in here baby
 function redirect(status) {
     if (status == 200) {
-        window.location.href = '../src/good.html';
+        window.location.href = '../good.html';
     } else {
-        window.location.href = '../src/bad.html';
+        window.location.href = '../bad.html';
     }
 }
 
