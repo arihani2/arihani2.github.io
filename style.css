@@ -229,7 +229,7 @@ nav li {
     text-decoration: underline;
 }
 
-.jobs {
+.jobs, #to-pad {
     padding-bottom: 65px;
 }
 
@@ -237,7 +237,6 @@ nav li {
     background-color: #5e6669;
 } */
 
-/* TODO Look into background color */
 .collapsible {
     background-color: #e8e9ea;
     cursor: pointer;
@@ -320,6 +319,10 @@ nav li {
 
 .textbooks {
     border-collapse: collapse;
+}
+
+#to-pad {
+    padding-bottom: 75px;
 }
 /* end books.html */
 
